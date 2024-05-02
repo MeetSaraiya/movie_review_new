@@ -150,7 +150,7 @@ export default function SingleMovie() {
             />
           </ListWithLabel>
 
-          <ListWithLabel label="Cast:">
+          <ListWithLabel label="Categories:">
             {genres.map((g) => (
               <CustomButtonLink label={g} key={g} clickable={false} />
             ))}
@@ -195,7 +195,7 @@ const CastProfiles = ({ cast, onProfileClick }) => {
   return (
     <div className="">
       <h1 className="text-light-subtle dark:text-dark-subtle font-semibold text-2xl mb-2">
-        Cast:
+        Role:
       </h1>
       <div className="flex flex-wrap space-x-4">
         {cast.map(({ id, profile, roleAs }) => {
