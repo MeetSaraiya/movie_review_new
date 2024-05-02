@@ -271,9 +271,9 @@ export default function MovieForm({ busy, btnTitle, initialState, onSubmit }) {
             value={releseDate}
           />
 
-          <Submit
+          <Submit 
             busy={busy}
-            value={btnTitle}
+            value={"submit"}
             onClick={handleSubmit}
             type="button"
           />
